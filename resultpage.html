@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            justify-content: center;
+            ;
+        }
+       .ent{
+display: inline;
+        font-size: xx-large;
+        font-weight: 600
+        ;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ent">
+        <span >Name :</span>
+        <span id="names"></span>
+<br>
+        <span >Adm no. :</span>
+        <span id="num1"></span>
+    </div>
+    <br><br>
+        <p class="heading-txt">Your Score</p>
+        <h1 id="score"></h1>
+        <script>
+            let score = localStorage.getItem("score");
+
+            document.getElementById("score").innerHTML=score;
+            document.getElementById("names").innerHTML=name;
+            document.getElementById("num1").innerHTML=name;
+        </script>
+           <script src="script.js"></script>
+ 
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    /* background-image: linear-gradient(purple,rgb(238, 48, 238)); */
+    background-image: url(bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 600px;
+    width: 730px;
+    background-color: rgba(176, 173, 173, 0.751);
+    border-radius: 15px;
+    /* box-shadow: 2px 2px 10px 1px rgb(102, 3, 102); */
+    overflow: hidden;
+    box-shadow: 3px 3px 4px 1px rgb(181, 174, 181);
+
+    padding: 10px;
+}
+.heading-txt{
+    color:purple;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 10px;
+}
+#timer{
+    font-size: x-large;
+    font-weight: 600;
+    padding:4px;
+    /* fill: 0px 0px 2px 1px purple; */
+        
+}
+.question{
+    margin:8px;
+    /* box-shadow: 0px 0px 2px 1px rgb(74, 70, 70); */
+    border-radius: 5px;
+    padding:5px;
+    font-size: xX-large;
+    font-weight: 530;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.option-container{
+    display: flex;
+    flex-direction: column;
+    margin:6px 4px;    
+    width: 100%;
+    padding: 10px;
+}
+.option-containerlabel:hover{
+cursor: pointer;
+}
+.option-container input{
+    visibility: hidden;    
+}
+.option-container label{   
+    /* box-shadow: 0px 0px 4px 1px rgb(128, 123, 123); */
+    padding: 10px;
+    padding-left: 55px;
+font-size: x-large;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.option-container input:checked + label{
+    background-color: rgb(93, 88, 242);
+    color:white;
+    box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+
+#next-button{
+    padding:10px;
+    border:none;
+    background-color: rgb(47, 164, 45);
+    color:white;
+    width: 100px;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px 1px rgb(127, 109, 109); */
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.2s;
+}
+#next-button:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 2px 1px rgb(127, 109, 109);
+    transition: 0.9s;
+    
+   
+}
+
+#next-button:active{
+    box-shadow:none;    
+}
